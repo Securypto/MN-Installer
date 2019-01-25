@@ -5,7 +5,7 @@ HOW TO INSTALL A SECURYPTO MASTERNODE
 Steps 1-5 will be excuted on your desktop wallet.
 Steps 6-8 will be excuted on your VPS.
 
-On your desktop start your wallet and disable auto zSCU minter during this setup to prevent autominting of your masternode collateral.
+Note: On your desktop start your wallet and disable auto zSCU minter during this setup to prevent autominting of your masternode collateral.
 You can disable autominting in the option menu BEFORE unlocking your wallet if its encrypted.
 Restart the wallet and check if autominting is disabled.
 
@@ -17,7 +17,7 @@ masternode genkey
 
 2)
 Stay in the Debug console, choose a name for your Masternode and type the following command.
-getaccountaddress YourMasternodeName
+getaccountaddress MyMasternode1
 
 3)
 Now send 10,000 SCU to the address you generated in step 2.
@@ -28,6 +28,8 @@ Send exactly 10,000 SCU, No less, no more.
 4)
 Now in the Debug console type the following command and save the output. We’ll also use this later… 
 masternode outputs
+
+Note: Its one big line, no line break!
 
 5)
 Go to tools > Open Masternode Configuration file and add this lines:
