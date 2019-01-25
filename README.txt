@@ -29,13 +29,14 @@ Send exactly 10,000 SCU, No less, no more.
 Now in the Debug console type the following command and save the output. We’ll also use this later… 
 masternode outputs
 
-Note: Its one big line, no line break!
-
 5)
 Go to tools > Open Masternode Configuration file and add this lines:
 <Name of Masternode from step 2> <IP of your Masternode>:51472 <privkey from Step 1> <Output of Step 4> <Outpiutindex from Step 4>
 So it will looks like this:
 MN1 31.14.135.27:51472 892WPpkqbr7sr6Si4fdsfssjjapuFzAXwETCrpPJubnrmU6aKzh c8f4965ea57a68d0e6dd384324dfd28cfbe0c801015b973e7331db8ce018716999 1
+
+Note: Its one big line, no line break!
+
 
 6) SSH login to your VPS (use putty if you are on windows) 
 Type and then press Enter: ssh root@ipadres-of-your-vps
