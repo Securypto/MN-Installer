@@ -63,5 +63,5 @@ If you cant see the Masternodes tab, go to Settings > options > wallet and check
 
 10)
 If you want to check the status of your masternode, login to your VPS again.
-Type and then press Enter: ./root/bin/securypto-cli masternode status
+Type and then press Enter: /root/bin/securypto-cli masternode status
 
