@@ -52,9 +52,10 @@ Type and then press Enter: bash <(wget -O- https://raw.githubusercontent.com/Sec
 
 
 8)
-Go back to your wallet.
-On the vertical tab left click on Masternodes and then Start all
-If you cant see the Masternodes tab, go to Settings > options > wallet and check "Show Masternodes Tab"
+Go back to your wallet and restart your wallet.
+On the vertical tab left click on Masternodes and then Start all.
+
+Note: If you cant see the Masternodes tab, go to Settings > options > wallet and check "Show Masternodes Tab"
 
 
 ###################################################################
