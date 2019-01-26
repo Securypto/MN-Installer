@@ -64,9 +64,10 @@ fi
 masternodeipfinded=`dig @ns1-1.akamaitech.net ANY whoami.akamai.net +short`
 echo ""
 echo ""
-echo "Please enter the Masternode IP and press Enter."
-echo "I think its:" $masternodeipfinded 
+echo "Is this the VPS IP:" $masternodeipfinded 
 echo "Type YES if my guess is correct or just type the correct IP and then press Enter."
+echo ""
+echo ""
 read masternodeip
 if [ "$masternodeip" = "YES" ]; then
 masternodeip=$masternodeipfinded
@@ -80,6 +81,7 @@ read masternodeprivkey
 
 if [ "$canproceed" = "YES" ] && [ ! -z "$masternodeprivkey" ] && [ ! -z "$masternodeip" ] ; then
 
+killall securyptod
 
 cat << "EOF"
 #################################################################
@@ -134,7 +136,7 @@ echo "masternode=1" >> $securyptodir/securypto.conf
 echo "externalip="$masternodeip"" >> $securyptodir/securypto.conf
 echo "masternodeprivkey="$masternodeprivkey"" >> $securyptodir/securypto.conf
 
-
+/root/bin/securyptod
 
 
 #Didnt type YES
