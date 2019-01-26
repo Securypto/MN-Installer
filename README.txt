@@ -49,10 +49,10 @@ Installer will guide you further, follow the instructions.
 
 8)
 Congratulations, MN has been installed, but it need to be started.
-Type and then press Enter: ./root/bin/securyptod
+Type and then press Enter: /root/bin/securyptod
 
 Note: It takes a while till your masternode has been synced to the network.
-Type and then press Enter: ./root/bin/securypto-cli masternode status
+Type and then press Enter: /root/bin/securypto-cli masternode status
 You can check the progress by comparing your current Masternode block against the live block count on https://explorer.securypto.io/
 
 
