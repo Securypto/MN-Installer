@@ -100,6 +100,7 @@ mkdir "bin"
 
 
 wget -N $cdnurl$bootstrapfile --no-check-certificate
+apt install unzip
 unzip $bootstrapfile -d $securyptodir
 
 
