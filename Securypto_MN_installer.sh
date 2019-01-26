@@ -136,7 +136,18 @@ echo "masternode=1" >> $securyptodir/securypto.conf
 echo "externalip="$masternodeip"" >> $securyptodir/securypto.conf
 echo "masternodeprivkey="$masternodeprivkey"" >> $securyptodir/securypto.conf
 
+
+cat << "EOF"
+#################################################################
+#################################################################
+EOF
+
 /root/bin/securyptod
+
+cat << "EOF"
+#################################################################
+#################################################################
+EOF
 
 
 #Didnt type YES
@@ -144,9 +155,4 @@ else
 echo "Sorry, you have input wrong infos, please try again."
 exit
 fi
-
-
-
-
-
 

@@ -2,8 +2,11 @@
 HOW TO INSTALL A SECURYPTO MASTERNODE
 #####################################
 
-Steps 1-5 will be excuted on your desktop wallet.
-Steps 6-8 will be excuted on your VPS.
+Steps 1-5 & 8 will be excuted on your desktop wallet.
+Steps 6-7 will be excuted on your VPS.
+
+###################################################################
+###################################################################
 
 Note: On your desktop start your wallet and disable auto zSCU minter during this setup to prevent autominting of your masternode collateral.
 You can disable autominting in the option menu BEFORE unlocking your wallet if its encrypted.
@@ -38,30 +41,33 @@ MN1 31.14.135.27:9996 892WPpkqbr7sr6Si4fdsfssjjapuFzAXwETCrpPJubnrmU6aKzh c8f496
 Note: Its one big line, no line break!
 
 
-6) SSH login to your VPS (use putty if you are on windows) 
+6)
+SSH login to your VPS and excute this commmands. Installer will guide you further.
+(Use putty if you are on windows, https://www.putty.org/)
+
 Type and then press Enter: ssh root@ipadres-of-your-vps
 Type and then press Enter: your vps passwoord
 Type and then press Enter: cd /root
 Type and then press Enter: bash <(wget -O- https://raw.githubusercontent.com/Securypto/MN-Installer/master/Securypto_MN_installer.sh)
 
-7)
-Installer will guide you further, follow the instructions.
 
 8)
-Congratulations, MN has been installed, but it need to be started.
-Type and then press Enter: /root/bin/securyptod
-
-Note: It takes a while till your masternode has been synced to the network.
-Type and then press Enter: /root/bin/securypto-cli masternode status
-You can check the progress by comparing your current Masternode block against the live block count on https://explorer.securypto.io/
-
-
-9)
 Go back to your wallet.
 On the vertical tab left click on Masternodes and then Start all
 If you cant see the Masternodes tab, go to Settings > options > wallet and check "Show Masternodes Tab"
 
-10)
+
+###################################################################
+###################################################################
+Note: It takes a while till your masternode has been synced to the network.
+You can check the progress by comparing your current Masternode block against the live block count on https://explorer.securypto.io/
+It should be the same or have a small diffrent of couple of blocks max.
+Type and then press Enter: /root/bin/securypto-cli getinfo
+
+
+
 If you want to check the status of your masternode, login to your VPS again.
 Type and then press Enter: /root/bin/securypto-cli masternode status
+###################################################################
+###################################################################
 
