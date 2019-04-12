@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-#MN Script v1.0.0
+#MN Script v1.2.0
 #change as needed
 linuxversion="64"
 
@@ -92,6 +92,7 @@ cat << "EOF"
 EOF
 
 
+/root/bin/securypto-cli stop
 
 rm $bootstrapfile 2> /dev/null
 rm $filecurrentwallet 2> /dev/null
@@ -135,6 +136,7 @@ echo "maxconnections=256" >> $securyptodir/securypto.conf
 echo "masternode=1" >> $securyptodir/securypto.conf
 echo "externalip="$masternodeip"" >> $securyptodir/securypto.conf
 echo "masternodeprivkey="$masternodeprivkey"" >> $securyptodir/securypto.conf
+echo "precompute=0" >> $securyptodir/securypto.conf
 
 
 cat << "EOF"
